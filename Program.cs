@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlTypes;
 
 Tamagotchi tamagotchi = new Tamagotchi();
 
@@ -7,10 +8,7 @@ Console.WriteLine("Name your Tamagotchi");
 tamagotchi.name = Console.ReadLine();
 
 Console.WriteLine($"Your pets name is {tamagotchi.name}");
-Console.WriteLine("Press ENTER to continue");
-
-Console.ReadLine();
-
+Thread.Sleep(2000);
 
 while (tamagotchi.GetAlive() == true)
 {
